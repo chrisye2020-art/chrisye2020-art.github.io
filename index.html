@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christopher Ye — Finance @ Carnegie Mellon</title>
+  <meta name="description" content="Christopher Ye — sophomore at Carnegie Mellon studying finance with minors in AI and robotics. Equity research analyst, Tartan Student Fund.">
+  <script
+    src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.0/dist/index.global.js"
+    integrity="sha384-nWTzRTCY/9V4Bo352ehygr1c4cnst4XN6lMR3fipakEQrhVpc0hEM5Dii3Amz0sT"
+    crossorigin="anonymous"
+  ></script>
+  <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+  </style>
+  <script>
+    document.documentElement.classList.toggle(
+      'dark',
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    );
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-dvh antialiased">
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><defs><symbol id="si-nba" viewBox="0 0 24 24" fill="currentColor"><path d="M9.19 0a2.486 2.486 0 0 0-2.485 2.484v19.029A2.488 2.488 0 0 0 9.19 24h5.615a2.493 2.493 0 0 0 2.49-2.487V2.484A2.488 2.488 0 0 0 14.81 0zm0 .584h3.21c-.62.237-.707.508-.73 1.366-.105.01-.325-.087-.25.434 0 0 .043.346.18.286-.133.918.023.99-.93 1.031l-.047.067c-.95.093-1.25-.027-2.05 1.603 0 0-.207.505-.268.714-.197.415-.674 1.328-.819 1.919-.046.2-.14.264-.01.553.185.417-.124.527.95.496V9.3s-.286.247-.346.398c-.061.147-.226.89-.22 1.237.019.917.767 1.683.992 2.597l.492.07c.282.634 1.495 2.355 1.743 2.582.057.159.365.355.545.551.149.141 1.025 1.1 2.054 1.692-.007-.001.164.344.249.618-.342.275.32.777.52 1.609.012.107-.19.222.114.495-.022 1.256-.402 1.918.241 2.266H9.191a1.9 1.9 0 0 1-1.9-1.901V2.486a1.9 1.9 0 0 1 1.9-1.902zm3.804.002h1.815a1.9 1.9 0 0 1 1.897 1.898v9.193a1.653 1.653 0 0 0-.22-.397c0-.255-.272-.249-.346-.344-.07-.081.067-.128-.407-.235-.09-.05-.158-.747-.158-.747-.07-.447-.229-.754-.467-1.227-.12-.243-.177-1.001-.305-1.386.071-1.767-.493-2.28-.95-2.569-.174-.11-.262-.191-.433-.29l-.005-.082c-.133-.126-.402-.264-.623-.362-.068-.07-.037-.22.01-.276.15-.02.348-.356.513-.703.129.009.174-.118.214-.19.138-.222.288-.413.096-.542.435-.777.154-1.301-.08-1.321-.095-.195-.26-.316-.551-.42zm.551 6.338c.06.319.34 1.929.456 2.187.123.259.535 1.05.73 1.54a1.69 1.69 0 0 0-1.294 1.646 1.692 1.692 0 0 0 1.693 1.691 1.692 1.692 0 0 0 1.576-1.066v8.59a1.887 1.887 0 0 1-1.598 1.877h-.017c.833-.502.319-1.46.16-2.022-.012-.033.014-.074.026-.1.045-.08-.045-.257-.045-.257-.098-.09-.127-.561-.182-.772-.089-.358.157-.971.157-1.18 0-.206-.156-.491-.445-.858-.069-.078-.276-1.86-.462-2.313-.258-.623-.339-.526-.64-1.266-.24-.525-.055-1.295-.59-3.085.005.006.12-.113.12-.113s-.422-1.55-.561-1.975c-.14-.426-.385-.456-.385-.456s.002-.172.012-.216c.02-.07.516-1.367.558-1.407.001-.03.717-.514.731-.445Z"/></symbol><symbol id="si-premierleague" viewBox="0 0 24 24" fill="currentColor"><path d="M11.176 0s-.681 1.938-.867 2.527C9.844 2.202 8.386 1.194 7.78.775c.14.806.356 2.124.403 2.403-.124-.093-.821-.698-1.875-1.194.589.682 1.008 1.736 1.271 2.588a10.566 10.566 0 0 1 5.238-1.379c.977 0 1.94.14 2.854.403.093-.884.279-1.968.682-2.758-.915.728-1.474 1.503-1.551 1.596-.031-.186-.093-1.52-.17-2.434-.372.403-1.8 2.016-2.063 2.264C12.384 1.938 11.176 0 11.176 0zm1.674 3.86c-1.674 0-3.3.386-4.696 1.115.713.046 1.224.668 1.395 1.164-.558-.45-1.442-.667-1.985-.078-.511.589-.464 1.688.047 2.572-1.193-.605-1.194-2.185-.775-2.867A10.392 10.392 0 0 0 3.61 9.594l1.07.172c-1.24 1.426-2.107 3.953-2.107 5.146l1.75-.543c-.31 1.054-.401 4.602.653 6.385 0 0 1.38-.96 2.945-3.363.65 2.17.356 3.985 0 5.767 2.82 1.581 6.09.696 8.012-.683l.357 1.35c2.248-1.489 3.488-3.628 3.72-6.124l.837.93c1.286-3.829.28-6.883-1.565-9.502l-.078.637-.79-.87s.17-.077.31-.263c.03-.078-.046-.495-.371-.774-.31.078-.56.264-.684.45a3.222 3.222 0 0 0-.93-.543c.062.077.604.79.65 1.007.466.388 1.102.837 1.52 1.395-.34-.403-1.984-.497-2.728-.078 0 0-.744-.868-1.426-1.473-.14-.511.326-.96.326-.96s-.48-.03-.93.42c-.682-.512-1.55-.745-1.55-.745-.961.14-1.612.82-1.612.82.217.14.512.327.776.42.511.217 1.006.139 1.332.139.263 0 .636.078.636.078s.635.495 1.565 1.565c-1.426-.574-2.915.062-3.969-.45-1.24-.62-1.146-1.595-1.146-1.595s-.836-.11-.836-.141c0 0 .618-.82 1.548-1.1l-.464-.402c.558-.465 1.534-1.085 3.115-1.24 0 0 .683.262 2.11 1.285.232-.326.308-1.008.308-1.008.728.248 2.217 1.333 2.806 1.984-.325-.759-.559-1.223-.636-2.013-.357-.357-1.24-1.101-3.069-1.551.295.605.264 1.115.264 1.115-.34-.45-1.055-1.146-1.55-1.332-.295-.015-.605-.047-.93-.047zm3.271 7.068a4.323 4.323 0 0 0 1.256.697v1.348c-.465.403-1.985 1.675-3.008 1.566-.573-1.1-1.115-2.107-1.115-2.107s1.565-1.318 2.867-1.504zm2.975.031c.465 1.131.59 2.48.078 3.379-.28-.605-.636-.947-1.008-1.35v-1.347s.418-.264.93-.682zm-.977 3.395c.465.511.559 1.068.559 1.068-.202 1.131-.836 1.846-1.301 2.14.046-.821-.172-1.519-.172-1.519-.34.372-1.13.743-1.596.836l-.697-1.3c.822-.032 2.201-1.194 2.201-1.194l1.006-.031z"/></symbol><symbol id="si-fifa" viewBox="0 0 24 24" fill="currentColor"><path d="M0 8.064v7.872h2.486v-2.843h1.728l.671-1.72H2.486V9.775h2.92l.637-1.711zm6.804 0L6.8 15.936h2.457V8.064zm4.15 0v7.872h2.484v-2.843h1.726l.677-1.72h-2.403V9.775h2.922L17 8.064zm7.658 0l-2.83 7.872h2.375l.306-1.058h2.769l.32 1.058H24l-2.837-7.872zm1.235 2.023l.981 3.277h-1.927z"/></symbol><symbol id="si-python" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></symbol><symbol id="si-cplusplus" viewBox="0 0 24 24" fill="currentColor"><path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.11-7.11a7.133 7.133 0 016.156 3.553l-3.076 1.78a3.567 3.567 0 00-3.08-1.78A3.56 3.56 0 008.444 12 3.56 3.56 0 0012 15.555a3.57 3.57 0 003.08-1.778l3.078 1.78A7.135 7.135 0 0112 19.11zm7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"/></symbol><symbol id="si-hubspot" viewBox="0 0 24 24" fill="currentColor"><path d="M18.164 7.93V5.084a2.198 2.198 0 001.267-1.978v-.067A2.2 2.2 0 0017.238.845h-.067a2.2 2.2 0 00-2.193 2.193v.067a2.196 2.196 0 001.252 1.973l.013.006v2.852a6.22 6.22 0 00-2.969 1.31l.012-.01-7.828-6.095A2.497 2.497 0 104.3 4.656l-.012.006 7.697 5.991a6.176 6.176 0 00-1.038 3.446c0 1.343.425 2.588 1.147 3.607l-.013-.02-2.342 2.343a1.968 1.968 0 00-.58-.095h-.002a2.033 2.033 0 102.033 2.033 1.978 1.978 0 00-.1-.595l.005.014 2.317-2.317a6.247 6.247 0 104.782-11.134l-.036-.005zm-.964 9.378a3.206 3.206 0 113.215-3.207v.002a3.206 3.206 0 01-3.207 3.207z"/></symbol><symbol id="si-openjdk" viewBox="0 0 24 24" fill="currentColor"><path d="M11.915 0 11.7.215C9.515 2.4 7.47 6.39 6.046 10.483c-1.064 1.024-3.633 2.81-3.711 3.551-.093.87 1.746 2.611 1.55 3.235-.198.625-1.304 1.408-1.014 1.939.1.188.823.011 1.277-.491a13.389 13.389 0 0 0-.017 2.14c.076.906.27 1.668.643 2.232.372.563.956.911 1.667.911.397 0 .727-.114 1.024-.264.298-.149.571-.33.91-.5.68-.34 1.634-.666 3.53-.604 1.903.062 2.872.39 3.559.704.687.314 1.15.664 1.925.664.767 0 1.395-.336 1.807-.9.412-.563.631-1.33.72-2.24.06-.623.055-1.32 0-2.066.454.45 1.117.604 1.213.424.29-.53-.816-1.314-1.013-1.937-.198-.624 1.642-2.366 1.549-3.236-.08-.748-2.707-2.568-3.748-3.586C16.428 6.374 14.308 2.394 12.13.215zm.175 6.038a2.95 2.95 0 0 1 2.943 2.942 2.95 2.95 0 0 1-2.943 2.943A2.95 2.95 0 0 1 9.148 8.98a2.95 2.95 0 0 1 2.942-2.942zM8.685 7.983a3.515 3.515 0 0 0-.145.997c0 1.951 1.6 3.55 3.55 3.55 1.95 0 3.55-1.598 3.55-3.55 0-.329-.046-.648-.132-.951.334.095.64.208.915.336a42.699 42.699 0 0 1 2.042 5.829c.678 2.545 1.01 4.92.846 6.607-.082.844-.29 1.51-.606 1.94-.315.431-.713.651-1.315.651-.593 0-.932-.27-1.673-.61-.741-.338-1.825-.694-3.792-.758-1.974-.064-3.073.293-3.821.669-.375.188-.659.373-.911.5s-.466.2-.752.2c-.53 0-.876-.209-1.16-.64-.285-.43-.474-1.101-.545-1.948-.141-1.693.176-4.069.823-6.614a43.155 43.155 0 0 1 1.934-5.783c.348-.167.749-.31 1.192-.425zm-3.382 4.362a.216.216 0 0 1 .13.031c-.166.56-.323 1.116-.463 1.665a33.849 33.849 0 0 0-.547 2.555 3.9 3.9 0 0 0-.2-.39c-.58-1.012-.914-1.642-1.16-2.08.315-.24 1.679-1.755 2.24-1.781zm13.394.01c.562.027 1.926 1.543 2.24 1.783-.246.438-.58 1.068-1.16 2.08a4.428 4.428 0 0 0-.163.309 32.354 32.354 0 0 0-.562-2.49 40.579 40.579 0 0 0-.482-1.652.216.216 0 0 1 .127-.03z"/></symbol>
+
+
+
+
+
+
+<symbol id="i-bowl" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12.5h17a8.5 8.5 0 0 1-17 0z"/><path d="M12 9V4.5M8.8 9.2 7.4 6M15.2 9.2 16.6 6"/></g></symbol>
+
+
+
+
+
+<symbol id="i-people" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.2" cy="8" r="3.1"/><path d="M3 20.2c0-3.4 2.8-6.2 6.2-6.2s6.2 2.8 6.2 6.2"/><path d="M16.2 5.3a3 3 0 0 1 0 5.4M18.4 20.2c0-2.3-.9-4.4-2.4-5.8"/></g></symbol>
+
+
+
+<symbol id="i-jollyroger" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.8 8.6h18.4"/><path d="M7.4 8.6C7.4 5.7 9.4 3.8 12 3.8s4.6 1.9 4.6 4.8"/><path d="M7.6 13.1a4.4 4.4 0 0 1 8.8 0c0 1.9-1 2.9-1 4.1 0 .9-1.3 1.4-3.4 1.4s-3.4-.5-3.4-1.4c0-1.2-1-2.2-1-4.1z"/><path d="M10.6 16.8h2.8"/></g><circle cx="10.1" cy="13.3" r="1" fill="currentColor"/><circle cx="13.9" cy="13.3" r="1" fill="currentColor"/></symbol>
+
+<symbol id="i-grassblock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2l8.6 4.4-8.6 4.4L3.4 7.6z"/><path d="M3.4 7.6v8.8L12 20.8l8.6-4.4V7.6"/><path d="M12 12.4v8.4"/></g></symbol>
+
+<symbol id="i-legobrick" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.8" y="8.8" width="16.4" height="10.4" rx="1.6"/><path d="M7.6 8.8V7.2a1.7 1.7 0 0 1 3.4 0v1.6M13 8.8V7.2a1.7 1.7 0 0 1 3.4 0v1.6"/></g></symbol>
+
+<symbol id="i-wave" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.8 7.5c2-1.6 4.1-1.6 6.1 0s4.1 1.6 6.1 0 4.1-1.6 6.2 0"/><path d="M2.8 12.6c2-1.6 4.1-1.6 6.1 0s4.1 1.6 6.1 0 4.1-1.6 6.2 0"/><path d="M2.8 17.7c2-1.6 4.1-1.6 6.1 0s4.1 1.6 6.1 0 4.1-1.6 6.2 0"/></g></symbol>
+
+<symbol id="i-volleyball" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3c-3.2 4.2-3.4 12.2 2.8 17.4M12 3c4.2 2.1 8.2 7.1 9 10.3M3.3 10.2c5.3.6 11.6 3.4 15.1 8.5"/></g></symbol>
+
+<symbol id="i-basketball" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18"/><path d="M5.6 5.6c4.1 3.1 4.1 9.7 0 12.8M18.4 5.6c-4.1 3.1-4.1 9.7 0 12.8"/></g></symbol>
+
+<symbol id="i-crest" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 5 5.6v6.2c0 4.6 3 7.7 7 9.1 4-1.4 7-4.5 7-9.1V5.6z"/><path d="M12 8.2v6.4M9.4 11.6 12 14.2l2.6-2.6"/></g></symbol>
+</defs></svg>
+
+  <!-- ══ NAV ══ -->
+  <header class="site-header">
+    <nav class="wrap h-14 flex items-center justify-between gap-4">
+      <a href="#top" class="font-display text-base shrink-0">Christopher&nbsp;Ye</a>
+      <div class="hidden md:flex items-center gap-1 text-[13px]">
+        <a href="#now" class="navlink">Now</a>
+        <a href="#work" class="navlink">Experience</a>
+        <a href="#impact" class="navlink">Founded</a>
+        <a href="#skills" class="navlink">Skills</a>
+        <a href="#beyond" class="navlink">Beyond</a>
+      </div>
+      <a href="mailto:cyye@andrew.cmu.edu" class="btn-primary !px-4 !py-1.5 shrink-0">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ══ HERO ══ -->
+    <section class="wrap pt-12 pb-14 sm:pt-20 sm:pb-20">
+      <div class="grid sm:grid-cols-[1fr_auto] gap-9 sm:gap-12 items-center">
+        <div>
+          <p class="reveal eyebrow">Carnegie Mellon · Class of 2029</p>
+          <h1 class="reveal font-display text-[2.6rem] leading-[1.03] sm:text-6xl md:text-7xl mt-3">
+            Christopher Ye
+          </h1>
+          <p class="reveal mt-5 max-w-xl font-display text-lg sm:text-2xl leading-snug text-ink2">
+            Finance student. I build models, and I build the things
+            <em class="text-accent not-italic">the models are about.</em>
+          </p>
+          <div class="reveal mt-7 flex flex-wrap gap-2">
+            <a href="mailto:cyye@andrew.cmu.edu" class="btn-primary">cyye@andrew.cmu.edu</a>
+            <a href="https://www.linkedin.com/in/christopher-ye-83b4b6311/" target="_blank" rel="noopener" class="btn-ghost">LinkedIn ↗</a>
+          </div>
+        </div>
+        <figure class="reveal portrait-wrap">
+          <img src="img/christopher-ye.jpg" alt="Christopher Ye" width="900" height="900" class="portrait">
+        </figure>
+      </div>
+
+      <dl class="reveal facts">
+        <div><dt>Studying</dt><dd>B.S. Business Administration<span>Finance · AI &amp; Robotics minors</span></dd></div>
+        <div><dt>GPA</dt><dd>3.9<span>ACT 35/36</span></dd></div>
+        <div><dt>Currently</dt><dd>Equity Research Analyst<span>Tartan Student Fund · TMT</span></dd></div>
+        <div><dt>Based</dt><dd>Pittsburgh, PA<span>From Scarsdale, NY</span></dd></div>
+      </dl>
+    </section>
+
+    <!-- ══ IMPACT STATS ══ -->
+    <section class="section-alt">
+      <div class="wrap py-12 sm:py-16">
+        <p class="reveal eyebrow"><svg class="ico-sm"><use href="#i-bowl"/></svg> Alliance for Impact · Co-Founder · 2020–2024</p>
+        <h2 class="reveal font-display text-2xl sm:text-4xl mt-3 max-w-2xl leading-tight">
+          I started a food resource program in New York during COVID-19.
+          <span class="text-ink3">It ran for four years.</span>
+        </h2>
+        <div class="reveal stats">
+          <div><strong>1M+</strong><span>pounds of food delivered</span></div>
+          <div><strong>50,000+</strong><span>people aided</span></div>
+          <div><strong>100+</strong><span>volunteers managed yearly</span></div>
+          <div><strong>NY Times</strong><span>featured coverage</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ NOW ══ -->
+    <section id="now" class="wrap py-16 sm:py-20">
+      <h2 class="reveal section-head">Now</h2>
+      <div class="card-grid mt-8">
+        <article class="reveal card">
+          <div class="card-top">
+            <span class="card-logo"><img src="img/logos/tsf.png" alt="Tepper Finance Group / Tartan Student Fund logo" loading="lazy"></span>
+            <p class="card-eyebrow">Tartan Student Fund</p>
+          </div>
+          <h3 class="card-title">Equity Research Analyst, TMT</h3>
+          <ul class="mini-list">
+            <li>CMU's student-managed, long-only fund · &gt;$180k AUM</li>
+            <li>Weekly coverage of 5 TMT names — earnings, catalysts, valuation</li>
+            <li>Two full stock pitches this semester</li>
+          </ul>
+        </article>
+        <article class="reveal card">
+          <div class="card-top">
+            <span class="emblem"><svg class="ico"><use href="#i-people"/></svg></span>
+            <p class="card-eyebrow">Asian Student Association</p>
+          </div>
+          <h3 class="card-title">Financial Chair</h3>
+          <ul class="mini-list">
+            <li>$10,000+ budget · 1,000+ members · largest org at CMU</li>
+            <li>Leads a 10-person finance committee</li>
+            <li>Passed a bylaw change redefining the chair role</li>
+          </ul>
+        </article>
+        <article class="reveal card">
+          <div class="card-top">
+            <span class="card-logo"><img src="img/logos/cmu.png" alt="Carnegie Mellon University logo" loading="lazy"></span>
+            <p class="card-eyebrow">Also on campus</p>
+          </div>
+          <h3 class="card-title">Clubs &amp; coursework</h3>
+          <ul class="mini-list">
+            <li>Research &amp; Asset Management Academy · CMU Quant Club</li>
+            <li>Tepper Finance Group · Tepper AI Club · Phi Delta Theta</li>
+            <li>Finance · Accounting · Probability &amp; Stats · Micro/Macro</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <figure class="reveal banner">
+      <img src="img/cmu-campus.jpg" alt="Carnegie Mellon University campus, Pittsburgh" width="1600" height="600" loading="lazy">
+    </figure>
+
+    <!-- ══ EXPERIENCE ══ -->
+    <section id="work" class="wrap py-16 sm:py-20">
+      <h2 class="reveal section-head">Experience</h2>
+      <ol class="timeline mt-8">
+
+        <li class="reveal tl-item">
+          <span class="tl-logo"><img src="img/logos/connexai.png" alt="Connex AI logo" loading="lazy"></span>
+          <div class="tl-head">
+            <h3 class="tl-role">Lead Financial Analyst</h3>
+            <span class="tl-date">Nov 2025 – Aug 2026</span>
+          </div>
+          <p class="tl-org">Connex AI <span class="tl-loc">· Casper, WY</span></p>
+          <ul class="tl-list">
+            <li>Built every core model from scratch: three-statement, DCF, comps, cost-to-duplicate, book value, and a 5-year revenue/cost/forward-multiple build.</li>
+            <li>Owned the operating budget and monthly cash flow forecast — burn rate and runway.</li>
+            <li>Ran diligence, built the pitch deck, closed out angel and VC outreach.</li>
+          </ul>
+        </li>
+
+        <li class="reveal tl-item">
+          <span class="tl-logo"><img src="img/logos/camelot.png" alt="Camelot Realty Group logo" loading="lazy"></span>
+          <div class="tl-head">
+            <h3 class="tl-role">AI Engineer</h3>
+            <span class="tl-date">Apr 2026 – Aug 2026</span>
+          </div>
+          <p class="tl-org">Camelot Realty Group <span class="tl-loc">· New York, NY</span></p>
+          <ul class="tl-list">
+            <li>Automated the deal pipeline: document intake, data extraction, CRM updates.</li>
+            <li>Integrated AI agents with the CRM to auto-route leads, draft replies, trigger follow-ups.</li>
+            <li>Helped build Camelot OS — payments, maintenance, documents, amenities and resident comms in one platform, with an agent handling resident and maintenance tickets.</li>
+          </ul>
+        </li>
+
+        <li class="reveal tl-item">
+          <span class="tl-logo"><img src="img/logos/camelot.png" alt="Camelot Realty Group logo" loading="lazy"></span>
+          <div class="tl-head">
+            <h3 class="tl-role">Data Analyst</h3>
+            <span class="tl-date">Apr 2025 – Aug 2025</span>
+          </div>
+          <p class="tl-org">Camelot Realty Group <span class="tl-loc">· New York, NY</span></p>
+          <ul class="tl-list">
+            <li>Led 5 interns collecting HPD, DOB and ECB violation data across New York.</li>
+            <li>Compiled data on 100,000+ buildings — Manhattan, Brooklyn, Queens.</li>
+            <li>Supported management-agreement negotiations into multiple signed contracts.</li>
+          </ul>
+        </li>
+
+        <li class="reveal tl-item">
+          <span class="tl-logo"><img src="img/logos/yefa.png" alt="Youth Entrepreneurship & Finance Association logo" loading="lazy"></span>
+          <div class="tl-head">
+            <h3 class="tl-role">Venture Capital Analyst</h3>
+            <span class="tl-date">Jun 2023 – Aug 2024</span>
+          </div>
+          <p class="tl-org">Youth Entrepreneurship &amp; Finance Association <span class="tl-loc">· New York, NY</span></p>
+          <ul class="tl-list">
+            <li>Co-founded YSVC, an impact investing program, and designed its diligence process.</li>
+            <li>Evaluated 50+ startups on market sizing, unit economics and impact thesis.</li>
+            <li>Presented memos to a committee of industry professionals; helped secure $50,000+ in grant and sponsorship capital.</li>
+          </ul>
+        </li>
+
+      </ol>
+    </section>
+
+    <figure class="reveal banner">
+      <img src="img/new-york.jpg" alt="Manhattan skyline from Brooklyn Bridge Park" width="1600" height="600" loading="lazy">
+    </figure>
+
+    <!-- ══ FOUNDED ══ -->
+    <section id="impact" class="wrap py-16 sm:py-20">
+      <h2 class="reveal section-head">Founded &amp; led</h2>
+      <ol class="timeline mt-8">
+
+        <li class="reveal tl-item">
+          <span class="tl-logo"><img src="img/logos/afi.png" alt="Alliance for Impact logo" loading="lazy"></span>
+          <div class="tl-head">
+            <h3 class="tl-role">Co-Founder</h3>
+            <span class="tl-date">Jun 2020 – Aug 2024</span>
+          </div>
+          <p class="tl-org">Alliance for Impact <span class="tl-loc">· New York, NY</span></p>
+          <ul class="tl-list">
+            <li>Launched and ran the Alliance for Impact food resource program in NYC during COVID-19; featured in <em>The New York Times</em>.</li>
+            <li>Managed 100+ volunteers each year, aided 50,000+ people, delivered over 1 million pounds of food.</li>
+          </ul>
+        </li>
+
+        <li class="reveal tl-item">
+          <span class="tl-logo"><img src="img/logos/viswise.png" alt="Viswise Academy logo" loading="lazy"></span>
+          <div class="tl-head">
+            <h3 class="tl-role">Co-Founder &amp; Operations Manager</h3>
+            <span class="tl-date">Jun 2022 – Aug 2024</span>
+          </div>
+          <p class="tl-org">Viswise Academy <span class="tl-loc">· New York, NY</span></p>
+          <ul class="tl-list">
+            <li>Built the summer program end to end — recruitment, scheduling, operations.</li>
+            <li>Wrote the financial literacy and startup case-study curriculum.</li>
+            <li>Ran 10+ interns each summer and taught 300+ students.</li>
+          </ul>
+        </li>
+
+        <li class="reveal tl-item">
+          <span class="tl-logo"><img src="img/logos/gasp.png" alt="Global Alliance for a Sustainable Planet logo" loading="lazy"></span>
+          <div class="tl-head">
+            <h3 class="tl-role">UN Youth Climate Ambassador</h3>
+            <span class="tl-date">Aug 2023 – Aug 2025</span>
+          </div>
+          <p class="tl-org">Global Alliance for a Sustainable Planet <span class="tl-loc">· New York, NY</span></p>
+          <ul class="tl-list">
+            <li>Youth project manager at GASP, mobilizing private capital for climate adaptation alongside UNOPS.</li>
+            <li>Organized a team to present research at COP28 in Dubai.</li>
+          </ul>
+        </li>
+
+      </ol>
+
+      <div class="reveal gallery gallery-2 mt-10">
+        <figure>
+          <img src="img/photo-panel.jpg" alt="Christopher Ye speaking on a student panel" width="1400" height="1050" loading="lazy">
+        </figure>
+        <figure class="tall">
+          <img src="img/photo-grad.jpg" alt="Christopher Ye at a graduation ceremony" width="1200" height="1600" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <figure class="reveal banner">
+      <img src="img/cop28.jpg" alt="COP28 climate conference, Dubai, 2023" width="1600" height="600" loading="lazy">
+    </figure>
+
+    <!-- ══ SKILLS ══ -->
+    <section id="skills" class="section-alt">
+      <div class="wrap py-16 sm:py-20">
+        <h2 class="reveal section-head">Skills</h2>
+        <div class="skill-cols mt-8">
+          <div class="reveal skill-col">
+            <h3 class="skill-head">Finance</h3>
+            <ul class="skill-list">
+              <li>Financial modeling</li>
+              <li>Three-statement models</li>
+              <li>DCF</li>
+              <li>Comparable company analysis</li>
+              <li>Cost-to-duplicate &amp; book value</li>
+              <li>Equity research</li>
+              <li>Budgeting &amp; cash flow forecasting</li>
+              <li>Due diligence</li>
+            </ul>
+          </div>
+          <div class="reveal skill-col">
+            <h3 class="skill-head">Programming</h3>
+            <ul class="skill-list">
+              <li><svg class="ico-sm"><use href="#si-python"/></svg>Python</li>
+              <li><svg class="ico-sm"><use href="#si-cplusplus"/></svg>C++</li>
+              <li><svg class="ico-sm"><use href="#si-openjdk"/></svg>Java</li>
+              <li>AI agent workflows</li>
+              <li>Data extraction &amp; cleaning</li>
+            </ul>
+          </div>
+          <div class="reveal skill-col">
+            <h3 class="skill-head">Tools</h3>
+            <ul class="skill-list">
+              <li>Excel</li>
+              <li>PowerPoint</li>
+              <li><svg class="ico-sm"><use href="#si-hubspot"/></svg>HubSpot</li>
+              <li>PropertyShark</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ BEYOND ══ -->
+    <section id="beyond" class="wrap py-16 sm:py-20">
+      <h2 class="reveal section-head">Beyond the résumé</h2>
+      <p class="reveal mt-6 max-w-2xl text-[15px] sm:text-base leading-relaxed text-ink2">
+        Trail Blazers fan from Scarsdale, New York — an unforced error I've committed to.
+        Also Chelsea, so my weekends are well diversified across sources of disappointment.
+      </p>
+      <ul class="reveal logo-grid mt-8">
+        <li><svg class="ico-lg"><use href="#i-basketball"/></svg><span>Trail Blazers</span></li>
+        <li><svg class="ico-lg"><use href="#si-nba"/></svg><span>NBA</span></li>
+        <li><svg class="ico-lg"><use href="#i-crest"/></svg><span>Chelsea FC</span></li>
+        <li><svg class="ico-lg"><use href="#si-premierleague"/></svg><span>Premier League</span></li>
+        <li><svg class="ico-lg"><use href="#si-fifa"/></svg><span>FIFA</span></li>
+        <li><svg class="ico-lg"><use href="#i-volleyball"/></svg><span>Volleyball</span></li>
+        <li><svg class="ico-lg"><use href="#i-jollyroger"/></svg><span>One Piece</span></li>
+        <li><svg class="ico-lg"><use href="#i-grassblock"/></svg><span>Minecraft</span></li>
+        <li><svg class="ico-lg"><use href="#i-legobrick"/></svg><span>Legos</span></li>
+        <li><svg class="ico-lg"><use href="#i-wave"/></svg><span>Deepwoken</span></li>
+      </ul>
+
+      <div class="reveal gallery gallery-2 mt-9">
+        <figure>
+          <img src="img/photo-team.jpg" alt="Christopher Ye with teammates in the gym" width="1400" height="1050" loading="lazy">
+        </figure>
+        <figure>
+          <img src="img/photo-hike.jpg" alt="Christopher Ye hiking on a coastal trail" width="1400" height="1050" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <figure class="reveal banner">
+      <img src="img/photo-stadium.jpg" alt="Christopher Ye at a football match" width="1600" height="700" loading="lazy">
+    </figure>
+
+    <!-- ══ CONTACT ══ -->
+    <section id="contact" class="wrap py-16 sm:py-20">
+      <h2 class="reveal font-display text-3xl sm:text-5xl">Let's talk.</h2>
+      <p class="reveal mt-4 text-[15px] text-ink3">I'd rather be asked a hard question than a polite one.</p>
+      <div class="reveal mt-8 flex flex-col sm:flex-row gap-3">
+        <a href="mailto:cyye@andrew.cmu.edu" class="btn-primary">cyye@andrew.cmu.edu</a>
+        <a href="https://www.linkedin.com/in/christopher-ye-83b4b6311/" target="_blank" rel="noopener" class="btn-ghost">LinkedIn ↗</a>
+      </div>
+      <figure class="reveal mt-12 inline-banner">
+        <img src="img/pittsburgh.jpg" alt="Downtown Pittsburgh skyline" width="1600" height="600" loading="lazy">
+      </figure>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap py-8 flex flex-col gap-2 text-[12px] text-muted">
+      <p>Christopher Ye · Carnegie Mellon University, Tepper School of Business</p>
+      <p>
+        Personal photographs © Christopher Ye. Location photos via Wikimedia Commons —
+        CC0 (Cbaile19), CC BY 4.0 (Jakub Hałun), and public domain (COP28 official photo).
+        Company and organisation logos are the trademarks of their respective owners and
+        are used here for identification only. Brand icons from Simple Icons (CC0);
+        remaining emblems drawn for this page.
+      </p>
+    </div>
+  </footer>
+
+  <!-- easter egg -->
+  <div id="egg" class="egg" hidden>
+    <svg class="egg-ico"><use href="#i-jollyroger"/></svg>
+    <p class="egg-title">The One Piece is real.</p>
+    <p class="egg-sub">Nice. Now ask me a hard question.</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
